@@ -46,6 +46,10 @@ h1, h2, h3 {
     margin: 0;
 }
 
+.lazybox {
+    margin: 3%;
+}
+
 .gallery {
     margin-bottom: 15%;
 }
