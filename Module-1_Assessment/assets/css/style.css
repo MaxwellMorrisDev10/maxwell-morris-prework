@@ -1,0 +1,48 @@
+body, a, a:hover, a:active {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+
+}
+
+body {
+    background-image: url("/assets/images/papyrus.png");
+    background-repeat: repeat;
+}
+
+main {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 2%;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    background: #fff;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.container-main {    
+    max-width: 960px;
+}
+
+.navbar-brand {
+    background: #4aaaa5;
+    color: #fff;
+}
+
+.gallery {
+    margin-bottom: 15%;
+}
+
+.footer {
+    background-color: #666666;
+    color: #fff;
+}
+
