@@ -12,7 +12,8 @@ body {
 main {
     background: #fff;
     border: 1px solid #ddd;
-    padding: 2%;
+    padding: 2% 0;
+    max-width: 960px;
 }
 
 h1, h2, h3 {
@@ -24,17 +25,25 @@ h1, h2, h3 {
 .header {
     width: 100%;
     background: #fff;
-    margin-right: 0;
-    margin-left: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1.5%;
 }
 
 .container {    
-    max-width: 960px;
+    max-width: 960px; 
+    padding: 0;
+}
+
+.navbar{
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-brand {
     background: #4aaaa5;
     color: #fff;
+    padding: 15px;
+    margin: 0;
 }
 
 .gallery {
@@ -44,5 +53,11 @@ h1, h2, h3 {
 .footer {
     background-color: #666666;
     color: #fff;
+}
+
+.footer-text {
+    padding: 3em 0 0 0;
+    line-height: 0;
+    border-top: 10px solid #4aaaa5;
 }
 
