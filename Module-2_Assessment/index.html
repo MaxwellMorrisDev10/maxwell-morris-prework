@@ -5,12 +5,12 @@
 <head>
     <title>Hangin at the Zoo</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
+<!-- Header -->
 <header>
     <h1>Zoo Hangman</h1>
     <h3>Press any key to begin</h3>
@@ -18,8 +18,34 @@
 
 <main>
 
+<!-- Image -->
+<div>
+    <img src="assets/images/zoo.jpg" id="#zoo-image" alt="zoo adventure">
+</div>
+
+<!-- Spaces for word-->
+<div>
+    <p><span id="word-space"></span></p>
+</div>
+
+<!-- Letters guessed-->
+<div>
+    <p><span id="guess"></span></p>
+</div>
+
+<!-- Guesses remaining -->
+<div>
+    <p>Number of guesses left:<span id="guess-count"></span></p>
+</div>
+
+<!-- Wins -->
+<div>
+    <p>You have won <span id="win-count">0</span> games.</p>
+</div>
+
 </main>
 
+<!-- Footer -->
 <footer>
     <p>No animals were harmed in the production of this game</p>
 </footer>
