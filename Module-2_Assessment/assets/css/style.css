@@ -6,7 +6,7 @@ body {
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 350px 100px 100px;
+    grid-template-rows: 30% 100px 100px;
 }
 
 #banner{
@@ -49,6 +49,7 @@ body {
 #win-box{
     grid-row: 3 / 4;
     grid-column: 10 / 12;
+    margin-bottom: 10%;
 }
 
 footer{
