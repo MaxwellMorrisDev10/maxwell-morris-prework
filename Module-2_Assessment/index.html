@@ -12,36 +12,38 @@
 <body>
 <!-- Header -->
 <header>
-    <h1>Zoo Hangman</h1>
-    <h3>Press any key to begin</h3>
+    <h1 id="banner">Zoo Hangman</h1>
+    <h3 id="start-text">Press any key to begin</h3>
 </header>
 
-<main>
+<main class="container">
 
-<!-- Image -->
-<div>
+    <!-- Image -->
+    <div id="image-box">
     <img src="assets/images/zoo.jpg" id="#zoo-image" alt="zoo adventure">
-</div>
+    </div>
 
-<!-- Spaces for word-->
-<div>
+    <!-- Spaces for word-->
+    <div id="game-box">
     <p><span id="word-space"></span></p>
-</div>
+    </div>
 
-<!-- Letters guessed-->
-<div>
-    <p><span id="guess"></span></p>
-</div>
+    <!-- Letters guessed-->
+    <div id="guess-box">
+        <p>Letters guessed:<br>
+            <span id="guess"></span></p>
+    </div>
 
-<!-- Guesses remaining -->
-<div>
-    <p>Number of guesses left:<span id="guess-count"></span></p>
-</div>
+    <!-- Guesses remaining -->
+    <div id="count-box">
+        <p>Number of guesses left:<br>
+            <span id="guess-count">11</span></p>
+    </div>
 
-<!-- Wins -->
-<div>
-    <p>You have won <span id="win-count">0</span> games.</p>
-</div>
+    <!-- Wins -->
+    <div id="win-box">
+        <p>You have won <span id="win-count">0</span> games.</p>
+    </div>
 
 </main>
 

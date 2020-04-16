@@ -1,0 +1,57 @@
+body {
+    line-height: 1.25;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 350px 100px 100px;
+}
+
+#banner{
+    font-size: 3em;
+}
+
+#start-text{
+    font-size: 2em;
+    margin-bottom: 2%;
+}
+
+#image-box{
+    grid-row: 1 / 2;
+    grid-column: 5 / 9;
+}
+
+#image-box img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    
+}
+
+#game-box{
+    grid-row: 2 / 3;
+    grid-column: 4 / 10;
+    background: yellow;
+}
+
+#guess-box{
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+}
+
+#count-box{
+    grid-row: 3 / 4;
+    grid-column: 6 / 8;
+}
+
+#win-box{
+    grid-row: 3 / 4;
+    grid-column: 10 / 12;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+}
