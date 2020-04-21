@@ -1,57 +1,35 @@
 <!DOCTYPE html>
 
-<html lang=en>
-    
-<head>
-    <title>Hangin at the Zoo</title>
+<html>
+  <head>
+    <meta charset='utf-8'>
 
+    <title>Hangin' at the Zoo</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-</head>
+  </head>
 
-<body>
-<!-- Header -->
-<header>
-    <h1 id="banner">Zoo Hangman</h1>
-    <h3 id="start-text">Press any key to begin</h3>
-</header>
-
-<main class="container">
-
-    <!-- Image -->
-    <div id="image-box">
-    <img src="assets/images/zoo.jpg" id="#zoo-image" alt="zoo adventure">
+  <body>
+    
+    <header>
+        <h1>Zoo Hangman</h1>
+        <h2>Press any key to get started!</h2>
+    </header>
+    <div id="print-box">
+        <main id='print-box'>
+            <div class="container">
+                <img id="game-img" src="assets/images/zoo.jpg" alt="A colorful zoo sign">
+            </div>
+            <div class="container">
+                <div id="word"></div>
+            </div>
+            <input type="text" id="guessBox" hidden>
+            <div id="guesses"></div>
+        </main>
     </div>
-
-    <!-- Spaces for word-->
-    <div id="game-box">
-    <p><span id="word-space"></span></p>
-    </div>
-
-    <!-- Letters guessed-->
-    <div id="guess-box">
-        <p>Letters guessed:<br>
-            <span id="guess"></span></p>
-    </div>
-
-    <!-- Guesses remaining -->
-    <div id="count-box">
-        <p>Number of guesses left:<br>
-            <span id="guess-count">11</span></p>
-    </div>
-
-    <!-- Wins -->
-    <div id="win-box">
-        <p>You have won <span id="win-count">0</span> games.</p>
-    </div>
-
-</main>
-
-<!-- Footer -->
-<footer>
-    <p>No animals were harmed in the production of this game</p>
-</footer>
-
-</body>
-
+    <footer>
+        <h3>No animals were harmed in the making of this game</h3>
+    </footer>
+   <script src="assets/javascript/game.js"></script>
+  </body>
 </html>

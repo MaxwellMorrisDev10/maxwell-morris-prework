@@ -1,58 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto+Mono&display=swap');
+
 body {
-    line-height: 1.25;
+    background: #063210;
+    font-weight: bold;
     text-align: center;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 30% 100px 100px;
+main {
+    max-width: 70%;
+    margin: auto;
 }
 
-#banner{
-    font-size: 3em;
+#print-box {
+    background-image: url(/assets/images/cat-print.jpg);
+    width: 90%;
+    margin: auto;
 }
 
-#start-text{
+header {
+    background: #8C5423;
+    padding-bottom: 1%;
+    width: 90%;
+    margin: auto;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #8EC895;
+    font-family: 'Bubblegum Sans', Impact, fantasy;
+}
+
+h2 {
     font-size: 2em;
-    margin-bottom: 2%;
+    color: #B5BDD2;
+    font-family: 'Bubblegum Sans', Impact, fantasy;
 }
 
-#image-box{
-    grid-row: 1 / 2;
-    grid-column: 5 / 9;
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
 }
 
-#image-box img{
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-    
+#game-img {
+    width: 50%;
+    max-width: 500px;
+    margin-top: 5%;
 }
 
-#game-box{
-    grid-row: 2 / 3;
-    grid-column: 4 / 10;
-    background: yellow;
+#word {
+    letter-spacing: 10px;
+    font-size: 2.5em;
+    padding: 25px 20px 25px 25px;
+    color: #134FD9;
+    background: rgba(219, 168, 123, 0.7);
+    border-radius: 25%;
+    font-family: 'Bubblegum Sans', Impact, fantasy;
 }
 
-#guess-box{
-    grid-row: 3 / 4;
-    grid-column: 2 / 4;
+#guesses {
+    font-size: 16pt;
+    color: #dba87b;
+    font-family: 'Roboto Mono','Courier New', Courier, monospace;
+    padding-bottom: 5%;
 }
 
-#count-box{
-    grid-row: 3 / 4;
-    grid-column: 6 / 8;
+.guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid #8c5423;
+    background: #378b41;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
 }
 
-#win-box{
-    grid-row: 3 / 4;
-    grid-column: 10 / 12;
-    margin-bottom: 10%;
-}
-
-footer{
-    position: relative;
+footer {
+    background: #8C5423;
+    width: 90%;
+    margin: auto;
+    position: sticky;
     bottom: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #B5BDD2;
+    line-height: 1.25;
+    font-weight: normal;
+    font-family: 'Bubblegum Sans', Impact, fantasy;
 }
